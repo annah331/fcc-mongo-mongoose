@@ -91,7 +91,7 @@ const findAndUpdate = (personName, done) => {
     { name: personName },
     { age: ageToSet },
     { new: true },
-    (err, updatedDod) => {
+    (err, updatedDoc) => {
       if (err) return console.log(err);
       done(null, updatedDoc);
     }
